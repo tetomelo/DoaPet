@@ -61,6 +61,7 @@ body{
     margin: auto;
     border-radius: 5px;
     font-size: 120%;
+    cursor: pointer;
 }
 
 #button2{
@@ -75,6 +76,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
     font-size: 120%;
+    cursor: pointer;
 }
 
 .inputContainer{

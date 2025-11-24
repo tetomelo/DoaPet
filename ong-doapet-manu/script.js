@@ -10,7 +10,7 @@ function entrar(){
     // }
 
     if(email === "admin" && senha === "admin"){
-        window.location.href = '../doa-pet-teto/index.html'
+        window.location.href = '"/ong-pet-andreia/index.html"' 
     }else if(!email && !senha) {
         alert("preencha os campos")
     } else {

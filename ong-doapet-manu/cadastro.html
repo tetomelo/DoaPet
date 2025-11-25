@@ -7,10 +7,8 @@
     <title>Ong Doapet</title>
 </head>
 <body>
-    <div id="formLogin">                            
-    <h1 id="formTitulo">Ong Doapet</h1>
-    <img id="img" src="cachorro-gato.jpg" alt="logo com cachorro-gato"class="logo">
-    
+    <h1 id="titulo">Cadastro</h1>
+
     <div class="inputContainer">
         <label for="email">E-mail:</label>
         <input class="inputLogin" id="email" type="email" placeholder="exemplo@email.com"> 
@@ -18,19 +16,15 @@
     
     <div class="inputContainer">
         <label for="senha">Senha:</label>
-        <input class="inputLogin" id="senha" type="password">
+        <input class="inputLogin" id="senha" type="number">
         <!-- <br> -->
         <!-- <input id="esqueceuSenha" type=""> -->
         
     </div>
-    <p id="esseAqui" for="">esqueceu senha?</p>
+
+    <button onclick="cadastraSe()">final</button>
 
 
-    <button id="button1" onclick="entrar()">ENTRAR </button>
-    <button id="button2" onclick="abrirPaginaCadastro()">CADASTRE-SE</button>
-</div>
-
-
-    <script src="script.js"></script>
+    <script src="cadastro.js"></script>
 </body>
 </html> 

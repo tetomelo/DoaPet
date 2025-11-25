@@ -10,10 +10,16 @@ function entrar(){
     // }
 
     if(email === "admin" && senha === "admin"){
-        window.location.href = '"/ong-pet-andreia/index.html"' 
+        window.location.href = '/ong-pet-andreia/index.html' 
     }else if(!email && !senha) {
         alert("preencha os campos")
     } else {
         alert(`Email ${email} não identificado`)
     }
+}
+
+function abrirPaginaCadastro(){
+    window.location.href = "cadastro.html"
+
+    // localStorage.setItem("usuarios" , JSON.stringify(usuarios))
 }

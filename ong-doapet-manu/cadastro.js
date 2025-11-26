@@ -15,7 +15,7 @@ function cadastraSe(){
     // let ongDoaPet = JSON.stringify(cadastro)
     // localStorage.setItem("cadastro" , ongDoaPet)
 
-    localStorage.setItem("usuarios" , JSON.stringify(usuarios))
+    localStorage.setItem("usuarios" , JSON.stringify (usuarios))
     
     window.location.href = '/ong-doapet-manu/index.html'
 }

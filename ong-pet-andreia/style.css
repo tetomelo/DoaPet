@@ -76,20 +76,22 @@ body{
 }
 
 
+
+
 #button1{
     width: 50%;
     background-color: green;
     border-color: green;
     color: aliceblue;
-    font-size: 40px;
+    font-size: 20px;
     border: none;
     /* text-align: center; */
     inline-size: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: block;
     margin: auto;
-    border-radius: 20px;
-    font-size: 100%;
+    border-radius: 5px;
+    font-size: 120%;
 }
 
 .logout{

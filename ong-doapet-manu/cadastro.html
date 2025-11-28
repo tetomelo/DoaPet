@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="cadastro.css">
     <title>Ong Doapet</title>
 </head>
 <body>
-    <h1 id="titulo">Cadastro</h1>
+    <div id="formMargem"> 
 
-    <div class="inputContainer">
-        <label for="email">E-mail:</label>
-        <input class="inputLogin" id="email" type="email" placeholder="exemplo@email.com"> 
-    </div>
-    
-    <div class="inputContainer">
-        <label for="senha">Senha:</label>
-        <input class="inputLogin" id="senha" type="number">
-        <!-- <br> -->
-        <!-- <input id="esqueceuSenha" type=""> -->
+        <h1 id="titulo">Cadastro</h1>
         
+        <div class="inputContainer">
+            <label for="email">Digite seu e-mail:</label>
+            <input class="inputLogin" id="email" type="email" placeholder="exemplo@email.com"> 
+        </div>
+        
+        <div class="inputContainer">
+            <label for="senha">Criar senha:</label>
+            <input class="inputLogin" id="senha" type="password">
+            <!-- <br> -->
+            <!-- <input id="esqueceuSenha" type=""> -->
+            
+        </div>
+        
+        <button id="botaoCriarConta" onclick="cadastraSe()">Criar conta</button>
     </div>
-
-    <button onclick="cadastraSe()">final</button>
 
 
     <script src="cadastro.js"></script>

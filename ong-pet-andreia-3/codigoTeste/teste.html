@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Livros | BookFlow</title>
+</head>
+
+<body>
+    <header>
+        <h1>BookFlow</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../Login/login.html">Login</a></li>
+            <li><a href="../Dashboard/menu.html">Dashboard</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="containerLivros">
+        <form>
+            <label for="inputLivro">Nome:</label>
+            <input type="text" id="inputLivro">
+
+            <label for="inputAutor">Autor:</label>
+            <input type="text" id="inputAutor">
+
+            <label for="inputGenero">Gênero:</label>
+            <input type="text" id="inputGenero">
+
+            <label for="inputPaginas">Páginas:</label>
+            <input type="number" id="inputPaginas">
+
+            <button onclick="cadastrarLivro(event)">Cadastrar</button>
+            <div id="cadastroOk"></div>
+
+
+        </form>
+    </div>
+    <div id="painelLivros">
+        <h1>Painel de Livros</h1>
+
+        <div id="listasLivros">
+
+        </div>
+        <div id="btcontainer">
+
+            <button onclick="navegar()" >Acessar a Biblioteca</button>
+        </div>
+
+
+
+        <script src="livros.js"></script>
+</body>
+
+</html>

@@ -1,38 +1,42 @@
-function entrar(){
-    // let nome = prompt("email:")
-    // let senha = prompt("Senha:")
+function entrar() {
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('senha').value;
 
-    const email = document.getElementById('email').value
-    const senha = document.getElementById('senha').value
+    // Buscar usuários no localStorage
+    const usuariosStorage = localStorage.getItem("usuarios");
 
-    // if(nome == "admin" && senha == "admin"){
-    //     window.location.href = 'index.html'
-    // }
-
-    
-    const nome = localStorage.getItem("nomeUsuario");
-    console.log(nome);
-    
-        if(email && senha){
-            window.location.href = '/ong-pet-andreia/index.html' 
-        }else if(!email && !senha) {
-            alert("preencha os campos")
-        } else {
-            alert(`Email ${email} não identificado ` && `Senha ${senha} não identificado`)
-        }
+    if (!usuariosStorage) {
+        alert("Nenhum usuário cadastrado!");
+        return;
     }
-    
 
+    // Converter JSON para objeto/array
+    const usuarios = JSON.parse(usuariosStorage);
 
-function abrirPaginaCadastro(){
+    // Caso tenha armazenado UM único usuário como objeto
+    if (!Array.isArray(usuarios)) {
+        if (usuarios.email === email && usuarios.senha === senha) {
+            alert("Usuário logado com sucesso!");
+            window.location.href = "index.html";
+        } else {
+            alert("Email ou senha incorretos!");
+        }
+        return;
+    }
 
-    const nome = localStorage.getItem("nomeUsuario");
-    console.log(nome);
-    
+    // Caso tenha armazenado VÁRIOS usuários como array
+    const usuarioEncontrado = usuarios.find(
+        (u) => u.email === email && u.senha === senha
+    );
 
+    if (usuarioEncontrado) {
+        alert("Usuário logado com sucesso!");
+        window.location.href = "../ong-pet-andreia/index.html";
+    } else {
+        alert("Email ou senha incorretos!");
+    }
+}
 
-    // localStorage.setItem("usuarios" , JSON.stringify(usuarios))
-
-    
-    window.location.href = "cadastro.html"
+function abrirPaginaCadastro() {
+    window.location.href = "cadastro.html";
 }

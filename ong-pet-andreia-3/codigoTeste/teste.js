@@ -19,11 +19,11 @@ function cadastrarLivro(event) {
 
     localStorage.setItem("livros", JSON.stringify(livros));
 
-    limpaLivro();
-    mostrarOsLivros();
+    limparAnimal();
+    mostrarOsAnimais();
 }
 
-function limpaLivro() {
+function limparAnimal() {
     document.getElementById("inputLivro").value = "";
     document.getElementById("inputAutor").value = "";
     document.getElementById("inputGenero").value = "";
@@ -32,7 +32,7 @@ function limpaLivro() {
     document.getElementById("inputLivro").focus();
 }
 
-function mostrarOsLivros() {
+function mostrarOsAnimais() {
     document.getElementById("listasLivros").innerHTML = "";
 
     livros.forEach(livro => {

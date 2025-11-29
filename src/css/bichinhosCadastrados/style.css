@@ -36,7 +36,13 @@ hr {
     display: flex;
     
 }
-
+.painel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 .img-card {
     img {
         border-top-left-radius: 50px;

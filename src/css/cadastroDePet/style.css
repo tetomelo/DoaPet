@@ -21,12 +21,7 @@ hr {
     width: 100%;
 }
 
-.container-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .card {
     /* width: 10vw; */
@@ -34,14 +29,28 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    width: 150px;
     border-radius: 10px;
+    padding: 2px;
     box-shadow: 0 0 10px 0;
     
 
     
 }
-
+#listaAnimais{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#painel .painel-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .img-card {
     img {
         border-top-left-radius: 50px;
@@ -136,7 +145,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 30px;
-  background-color: #1a1b1a;
+  background-color: green;
   border-radius: 20px;
   width: 300px;
   margin: 50px auto;
@@ -144,10 +153,11 @@ body {
 }
 
 header {
-  background-color: #000000;
-  padding: 20px 25px;
+  background-color: green;
+  padding: 2px 2px;
   margin: 10px 0 0 0;
   text-align: center;
+  border-radius: 10px;
 }
 
 h1 {
@@ -178,7 +188,13 @@ button {
   align-self: center;
   transition: background-color 0.3s;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: gray;
+}
 button:hover {
   background-color: gray;
 }

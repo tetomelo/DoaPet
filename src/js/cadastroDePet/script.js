@@ -3,20 +3,28 @@ let animais = JSON.parse(localStorage.getItem("animais")) || [];
 function cadastrarAnimal(event) {
     event.preventDefault();
 
-    let nomeAnimal = document.getElementById("inputNome").value;
-    let idade = document.getElementById("inputIdade").value;
-    
+    const inputNome = document.getElementById("inputNome").value;
+    const inputIdade = document.getElementById("inputIdade").value;
+    if (!inputNome || !inputIdade) {
+        alert("Por favor, preencha o formulário corretamente.");
+        return;
+    } else if(inputNome === Number()){
 
-    const novoAnimal = {
-        nome: nomeAnimal,
-        idade: Number(idade),
-    };
+        alert("O nome do animal não pode ser um número.");
+        return;
+    } else {
+        const novoAnimal = {
+            nome: inputNome,
+            idade: Number(inputIdade),
+        };
 
-    animais.push(novoAnimal);
+        animais.push(novoAnimal);
 
-    localStorage.setItem("animais", JSON.stringify(animais));
-    alert(`o animal ${nomeAnimal} foi cadastrado`)
-   window.location.href = "../bichinhosCadastrados/index.html"
+        localStorage.setItem("animais", JSON.stringify(animais));
+        alert(`o animal ${inputNome} foi cadastrado`)
+        
+    }
+    window.location.href = "../bichinhosCadastrados/index.html";
 }
 
 function limparAnimal() {

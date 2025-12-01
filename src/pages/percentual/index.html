@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/percentual/style.css">
     <title>Percentuais</title>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div id="formLogin">
-        <h1 id="formTitulo"></h1>
-        <img id="img" src="../../imgs/foto pizza.png" alt="">
+    <div class="logout">
+        <a href="../home/index.html">← Voltar para Home</a>
     </div>
+    <div id="formLogin">
+        <h1 id="formTitulo">Percentual de Animais Cadastrados e Animais em Estoque</h1>
+        <div class="chart-container">
+            <canvas id="chartPizza"></canvas>
+        </div>
+        <div id="legendaInfo"></div>
+    </div>
+    <script src="../../js/percentual/script.js"></script>
 </body>
 </html>

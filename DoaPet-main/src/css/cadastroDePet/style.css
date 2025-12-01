@@ -1,0 +1,204 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    background-color: green;
+    height: 2px;
+    width: 100%;
+}
+
+
+
+.card {
+    /* width: 10vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 0 0 10px 0;
+    
+
+    
+}
+#listaAnimais{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#painel .painel-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-card {
+    img {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+}
+.parte-baixo-card {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h3 {
+    font-style: italic;
+}
+
+
+#formLogin {
+    border: 3px solid green;
+    border-radius: 10px;
+    padding: 30px;
+    width: 50%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons button {
+    min-width: 40vw;
+    background-color: rgb(79, 223, 79);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    transition: 0.5s;
+    background-color: rgb(55, 133, 55);
+}
+
+.imagem2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+
+#button1 {
+    width: 50%;
+    background-color: green;
+    border-color: green;
+    color: aliceblue;
+    font-size: 20px;
+    border: none;
+    /* text-align: center; */
+    inline-size: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+.logout {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#containerLivros {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: green;
+  border-radius: 20px;
+  width: 300px;
+  margin: 50px auto;
+  color: white;
+}
+
+header {
+  background-color: green;
+  padding: 2px 2px;
+  margin: 10px 0 0 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+#containerLivros div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+#containerLivros input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+a:hover{
+    color: green;
+}
+a:furst-child{
+    margin-left: 0;
+}
+button:hover {
+  background-color: gray;
+}

@@ -127,7 +127,7 @@ body {
     align-items: center;
 }
 
-#containerLivros {
+#containerAnimais {
   display: flex;
   justify-content: center;
   padding: 30px;
@@ -150,14 +150,14 @@ h1 {
   text-align: center;
 }
 
-#containerLivros div {
+#containerAnimais div {
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 100%;
 }
 
-#containerLivros input {
+#containerAnimais input {
   padding: 8px;
   border-radius: 5px;
   border: none;

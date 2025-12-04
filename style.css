@@ -1,8 +1,8 @@
 body{
-    display: flex;
-    flex-direction: column;
+    display: flex; /*alinhamento da pagina*/
+    flex-direction: column; /*tudo no meio da tela*/
     justify-content: center;
-    align-items: center;
+    align-items: center; /*faz o conteúdo ocupar toda a altura da tela, garantindo centralização vertical.*/
     min-height: 100vh;
 }
 
@@ -10,24 +10,24 @@ body{
 
     border: 3px solid green;
     border-radius: 10px;
-    padding: 30px;
-    width: 50%;
+    padding: 30px; /*adiciona espaço interno*/
+    width: 50%; /*define a largura*/
 }
 
 #formTitulo{
    color: rgb(24, 179, 240);
-   padding-left: 40%;
+   padding-left: 40%; /*posiciona o texto mais à direita.*/
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #img{
     padding-left: 25%;
-    max-width: 50%;
+    max-width: 50%; /*impede que a imagem fique grande demais.*/
 }
 
 .inputContainer{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-top: 30px;
+  margin-top: 30px; /*Adiciona um espaçamento entre os campos.*/
    
 }
 
@@ -46,17 +46,17 @@ body{
     background-color: green;
     border-color: green;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 20px; /*tamanho da fonte*/
     border: none;
     /* text-align: center; */
     inline-size: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: block;
-    margin: auto;
+    margin: auto;/*centralizar um elemento horizontalmente*/
     margin-top: 30px;
-    border-radius: 5px;
+    border-radius: 5px; /*bordar arredondads*/
     font-size: 120%;
-    cursor: pointer;
+    cursor: pointer;/*muda o cursor quando passa por cima.*/
 }
 
 #button2{
@@ -64,12 +64,12 @@ body{
     border: 2px solid green;
     border-radius: 5px;
     color: green;
-    display: block;
+    display: block;/*como um elemento vai se comportar na página, ou seja como um bloco*/
     margin: auto;
     font-size: 20px;
     margin-top: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: medium;
+    font-size: medium;/*tamanho da fonte: media*/
     font-size: 120%;
     cursor: pointer;
 }

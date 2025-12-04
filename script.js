@@ -1,5 +1,5 @@
 function entrar() {
-    //getElement: ele pega o elemento que tem dentro do id; 
+    //getElement: pega o elemento html pelo id; 
     // value:pega o que o usuário digitou dentro do input.
     const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value; 
@@ -27,7 +27,7 @@ function entrar() {
     }
 
     // Caso tenha armazenado VÁRIOS usuários como array
-    const usuarioEncontrado = usuarios.find( //find: Procura dentro do array
+    const usuarioEncontrado = usuarios.find( //find: Procura dentro do array um email e uma senha igual com que foi digitado
         (u) => u.email === email && u.senha === senha //verifica email e senha
     );
 

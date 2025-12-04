@@ -1,7 +1,7 @@
-* {
+* { /*começar o estilo “do zero” para ter controle total da página.*/
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0; /*adiciona um expaço interno*/
+    box-sizing: border-box; /*faz com que largura e altura incluam padding e borda*/
 }
 
 body {
@@ -9,14 +9,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
-    padding: 20px;
+    align-items: center; /*alinhar os itens*/
+    min-height: 100vh; /*altura mínima que um elemento deve ter.*/
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%); /*ria um fundo com um efeito de degradê na diagonal*/
+    padding: 20px;/*adiciona um espaço interno*/
 }
 
 nav {
-    display: flex;
+    display: flex;/*organizados de forma flexível.*/
     justify-content: space-between;
     text-align: center;
 }
@@ -39,7 +39,7 @@ h1 {
     text-align: center;
     color: #333;
     margin-bottom: 30px;
-    line-height: 1.4;
+    line-height: 1.4;/*espaçamento entre as linhas de texto.*/
 }
 
 h3 {
@@ -51,9 +51,9 @@ h3 {
     border-radius: 20px;
     padding: 40px;
     width: 90%;
-    max-width: 800px;
+    max-width: 800px;/*largura máxima que um elemento pode ter.*/
     background: white;
-    box-shadow: 0 10px 30px rgba(0, 128, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 128, 0, 0.1);/*cria uma sombra em volta de um elemento*/
 }
 
 /* Container do gráfico */
@@ -67,7 +67,7 @@ h3 {
 
 #chartPizza {
     max-width: 100%;
-    height: auto !important;
+    height: auto !important; /*ajustar sua altura automaticamente de acordo com o conteúdo interno.*/
 }
 
 /* Informações de estatísticas */

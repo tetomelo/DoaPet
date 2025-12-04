@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/percentual/style.css">
     <title>Percentuais</title>
-    <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="logout">
-        <a href="../home/index.html">← Voltar para Home</a>
+        <a href="../home/index.html">← Voltar para Home</a> 
     </div>
-    <div id="formLogin">
+    <div id="formLogin"> <!--id:único elemento para manipular no css-->
         <h1 id="formTitulo">Percentual de Animais Cadastrados e Animais em Estoque</h1>
-        <div class="chart-container">
-            <canvas id="chartPizza"></canvas>
-        </div>
+        <div class="chart-container"> <!--Grupo de elementos-->
+            <canvas id="chartPizza"></canvas><!--usada para desenhos no js-->
+        </div> <!--agrupar e organizar elementos-->
         <div id="legendaInfo"></div>
     </div>
     <script src="../../js/percentual/script.js"></script>

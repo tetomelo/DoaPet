@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () { //addEventListener:ele executa uma função quando um evento acontece.
 	carregarGraficoPizza();
 });
 
@@ -14,7 +14,7 @@ function carregarGraficoPizza() {
 
 	// Calcular percentuais
 	const percAnimaisCadastrados = totalAnimais > 0 
-		? ((qtdAnimaisCadastrados / totalAnimais) * 100).toFixed(1) 
+		? ((qtdAnimaisCadastrados / totalAnimais) * 100).toFixed(1) //quantas casas decimais um número vai ter
 		: 0;
 	const percAnimaisEstoque = totalAnimais > 0 
 		? ((qtdAnimaisEstoque / totalAnimais) * 100).toFixed(1) 
@@ -28,7 +28,7 @@ function carregarGraficoPizza() {
 	}
 
 	// Criar o gráfico de pizza
-	const chart = new Chart(ctx, {
+	const chart = new Chart(ctx, { //ele é usado para criar gráficos
 		type: 'pie',
 		data: {
 			labels: [
